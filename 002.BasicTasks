@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-28
+# Description: Run basic linux tasks and creates three empty files a, b and c
+
+echo
+echo This script will run a few basic tasks
+echo
+pwd
+echo
+ls
+echo
+whoami
+echo
+date
+echo
+cal
+touch a b c
+echo End of script
