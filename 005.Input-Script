@@ -1,0 +1,25 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-28
+# Description: Script allows to input information.
+
+a=`hostname`
+
+echo
+echo Hello, my name is Volodymyr and server name is $a
+echo
+echo What is Your name?
+read b
+echo
+echo What is your profession?
+read c
+echo
+echo What is your favourite show?
+read d
+echo
+echo Hello $b
+echo Your profession is $c what is really awesome.
+echo
+echo $d is a good show
+echo
+echo End of script.

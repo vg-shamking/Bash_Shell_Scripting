@@ -1,0 +1,25 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-28
+# Descriptio: Script defins variables.
+
+echo
+
+p=pwd
+l=ls
+wi=whoami
+d=date
+c='cal 2018'
+
+echo Run variables tasks
+echo
+$p
+echo
+$l
+echo
+$wi
+echo
+$d
+echo
+$c
+echo End of the script.
