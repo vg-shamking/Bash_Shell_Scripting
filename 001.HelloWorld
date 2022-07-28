@@ -1,0 +1,6 @@
+#!/bin/bash
+# Volodymyr 2022-07-28
+# Description: This script will output "Hello World" on the screen.
+echo
+echo Hello World
+echo
