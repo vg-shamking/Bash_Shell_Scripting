@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-28
+# Description: if-then understanding script.
+
+count=100
+if [ $count -eq 100 ]
+then
+	echo Count is 100
+else
+	echo Count is not 100
+fi

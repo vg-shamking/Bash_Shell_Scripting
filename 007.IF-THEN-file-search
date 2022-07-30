@@ -1,0 +1,11 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-28
+
+clear
+if [ -e /home/centos/Desktop/scripts/a ]
+	then
+	echo "File exists"
+	else
+	echo "There is no such a file"
+fi
