@@ -1,0 +1,7 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-30
+# Description: This script pull only Error messages from /var/log/messages
+
+grep -i fail /home/centos/Desktop/scripts/messages1
+

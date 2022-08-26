@@ -1,0 +1,23 @@
+#!/bin/bash
+
+read -r -p "Enter name of script: " script
+#read -r -p "Whats your fullname: " fname
+read -r -p "Whats the description of this script: " description
+echo "#!/bin/bash" > /home/centos/Desktop/scripts/${script}
+echo
+echo "###################################################" >> /home/centos/Desktop/scripts/${script}
+echo
+#echo "# Author: " $fname >> /home/centos/Desktop/scripts/${script}
+echo "# Author: Volodymyr Gorbachov" >> /home/centos/Desktop/scripts/${script}
+echo
+datum=`date | grep -v grep | awk '{print $3, $2, $6, $4}'`
+echo "# Date: "$datum >> /home/centos/Desktop/scripts/${script}
+echo
+echo "# Description: " $description >> /home/centos/Desktop/scripts/${script}
+echo
+echo "# Modified: " $datum >> /home/centos/Desktop/scripts/${script}
+echo
+echo "###################################################" >> /home/centos/Desktop/scripts/${script}
+echo >> /home/centos/Desktop/scripts/${script}
+chmod a+x ${script}
+vi ${script}

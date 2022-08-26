@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-07-30
+# Description: Format the output of admin commands.
+
+echo
+date | awk '{print $1}'
+echo
+uptime | awk '{print $3}'
+echo
+df -h
+echo
