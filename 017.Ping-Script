@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-12
+# Description: This script will ping remote host and notify
+
+host="192.168.122.1"
+ping -c2 $host &> /dev/null
+	if [ $? -eq 0 ]
+	then 
+	echo $host is OK
+	else
+	echo $host is NOT OK
+	fi
