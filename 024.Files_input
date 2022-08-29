@@ -1,0 +1,15 @@
+#/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: Creation files with user input
+
+echo How many files do you want to create?
+read t
+echo
+echo Please enter the start name of the files?
+read n
+
+for i in $(seq 1 $t)
+do
+	touch $n.$i
+done
