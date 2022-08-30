@@ -1,0 +1,11 @@
+#/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: Add permissions
+
+for i in volo.*
+do
+	echo Assigning exe permissions to $i
+	chmod a+x $i
+	sleep 1
+done
