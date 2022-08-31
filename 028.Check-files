@@ -1,0 +1,21 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: This script will check files with ending .txt
+
+FILES="/etc/passwd
+/etc/group
+/etc/shadow
+/etc/nsswitch.conf
+/etc/ssh/sshd_ssh_config
+/etc/fake"
+
+echo
+for file in $FILES
+do
+	if [ ! -e $file ]
+	then
+	echo $file do not exists
+	echo
+	fi
+done
