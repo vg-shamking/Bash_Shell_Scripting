@@ -1,0 +1,9 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: This script will copy file to remote host
+
+for i in servername1 servername2 servername3
+do
+	scp filename $i:/tmp
+done
