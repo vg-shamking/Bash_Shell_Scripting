@@ -1,0 +1,8 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: Script lists all logged-in  users.
+
+today=`date | awk '{print $1,$2,$3}'`
+last | grep "$today" | awk '{print $1}'
+
