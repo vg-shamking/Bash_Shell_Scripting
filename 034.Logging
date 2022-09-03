@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: Checks in var/log/messages defined keywords
+
+IT="mail1@gmail.com,mail2@gmail.com,somemail@hotmail.com"
+
+if [ -s /home/centos/Desktop/scripts/filtered-mess ]
+	then
+	cat /home/centos/Desktop/scripts/filtered-mess | sort | uniq | mail -s "syslog message" $IT
+	rm /home/centos/Desktop/scripts/filtered-mess
+	else
+fi

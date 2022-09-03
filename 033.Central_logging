@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-15
+# Description: Checks in var/log/messages defined keywords
+
+tail -fn0 /var/log/messages | while read line
+do
+echo $line | egrep -i "refused|invalid|error|fail|lost|shut|down|offline"
+	if [ $? = 0 ]
+	then
+	echo $line >> /home/centos/Desktop/scripts/filtered-mess
+	fi
+done
