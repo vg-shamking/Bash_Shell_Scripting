@@ -1,0 +1,11 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08-16
+# Description: Create User Account
+
+echo "Please provide a username?"
+read u
+echo
+
+useradd $u
+echo $u account has been created
