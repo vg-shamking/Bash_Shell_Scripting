@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08
+# Description: Script checks total number of files 'file'
+
+a=`ls -l file* | wc -l`
+
+if [ $a -eq 20 ]
+	then
+	echo "Yes, there are 20 files"
+	else
+	echo There is less then 20 files
+fi
