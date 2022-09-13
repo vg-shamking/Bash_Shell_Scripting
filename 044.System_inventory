@@ -1,0 +1,33 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08
+# Description: This script will add system inventory to database file.
+
+echo Please enter hostname
+read host
+echo
+	grep -q $host /home/centos/Desktop/scripts/database
+	if [ $? -eq 0 ]
+	then
+	echo ERROR -- Hostname $host already exists
+	echo
+	exit 0
+	fi
+echo
+echo Please enter IP address
+read ip
+echo
+	grep -q $ip /home/centos/Desktop/scripts/database
+	if [ $? -eq 0 ]
+	then
+	echo ERROR -- IP $ip already exists
+	echo
+	exit 0
+	fi
+echo
+echo Please enter description?
+read descr
+echo
+
+echo $host $ip $descr >> /home/centos/Desktop/scripts/database
+echo The provided record has been added to the file 
