@@ -1,0 +1,18 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08
+# Description: This script will delete system inventory from database file.
+
+echo Please enter hostname or IP address?
+read host
+echo
+
+        grep -q $host /home/centos/Desktop/scripts/database
+        if [ $? -eq 0 ]
+        then
+        echo
+        sed -i '/'$host'/d' /home/centos/Desktop/scripts/database
+        echo $host has been deleted
+        else
+        echo Record does not exist
+        fi
