@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author: Volodymyr
+# Date: 2022-08
+# Description: This script will ask for input which option should be done.
+
+echo
+echo Please select one of the following options:
+echo
+echo 'a = Add a record'
+echo 'd = Delete a record'
+echo
+        read choice
+
+                case $choice in
+a) /home/centos/Desktop/scripts/044.System_inventory;;
+d) /home/centos/Desktop/scripts/045.System_inv_delete;;
+*) echo Invalid choice - Bye.
+
+                esac
